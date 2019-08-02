@@ -1,0 +1,34 @@
+$(function(){
+  $("#form").bootstrapValidator({
+    fields:{
+      username:{
+        validators:{
+            //非空
+          notEmpty:{
+            message:"用户名不能为空"
+          },
+          //长度校验
+          stringLength:{
+            min:2,
+            max:6,
+            message:"用户名长度必须在2-6之间"
+          }
+        }
+      },
+      password:{
+        validators:{
+          //非空
+        notEmpty:{
+          message:"密码不能为空"
+        },
+        //长度校验
+        stringLength:{
+          min:6,
+          max:12,
+          message:"密码长度必须在6-12之间"
+        }
+       }
+      }
+    }
+  })
+})
