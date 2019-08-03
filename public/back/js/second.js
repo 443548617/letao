@@ -35,4 +35,9 @@ function render(){
      }
    });
 }
+
+//2 显示模态框
+$("#addBtn").click(function(){
+  $("#addModal").modal("show");
+});
 });
