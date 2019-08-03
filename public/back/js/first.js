@@ -34,4 +34,47 @@ $(function(){
   $("#addBtn").click(function(){
     $("#addModal").modal("show");
   });
+
+
+  //表单验证
+  $("#form").bootstrapValidator({
+      // 配置校验图标
+    feedbackIcons: {
+      valid: 'glyphicon glyphicon-ok',    // 校验成功
+      invalid: 'glyphicon glyphicon-remove',  // 校验失败
+      validating: 'glyphicon glyphicon-refresh' // 校验中
+    },
+    fields:{
+      //配置字段
+      categoryName:{
+        //配置规则
+        validators:{
+          notEmpty:{
+            message:"不能为空"
+          }
+      }
+    }
+   }
+  });
+  
+  //注册表单验证成功事件
+  $("#form").on("success.form.bv",function(e){
+     e.preventDefault();
+     $.ajax({
+       type:"POST",
+       url:"/category/addTopCategory",
+       data:$(form).serialize(),
+       dataType:"json",
+       success:function( info ){
+          console.log(info);
+          if(info.success){
+            currentPage = 1;
+            $("#addModal").modal("hide");
+            render();
+
+            $('#form').data("bootstrapValidator").resetForm(true);
+       }
+     }
+     });
+  });
 });
