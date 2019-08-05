@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
   <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 
@@ -24,7 +25,88 @@
 </div>
 <!-- 主体 -->
 <div class="lt_main">
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+          <!--这里放置真实显示的DOM内容-->
 
+            <!-- 轮播图 -->
+            <div class="mui-slider">
+              <!-- 图片的容器 -->
+              <div class="mui-slider-group mui-slider-loop">
+                  <!--支持循环，需要重复图片节点-->
+                  <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner6.png"/></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="./images/banner1.png"/></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="./images/banner2.png" /></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="./images/banner3.png" /></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="./images/banner4.png" /></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="./images/banner5.png"/></a></div>
+                  <div class="mui-slider-item"><a href="#"><img src="./images/banner6.png"/></a></div>
+                  <!--支持循环，需要重复图片节点-->
+                  <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner1.png" \/></a></div>
+              </div>
+              <!-- 小圆点 -->
+            <div class="mui-slider-indicator">
+                <div class="mui-indicator mui-active"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+            </div>
+            </div>
+
+            <!-- 导航 -->
+            <div class="lt_nav">
+              <ul class="mui-clearfix">
+                  <li><a href="#"></a><img src="./images/nav1.png" alt=""></li>
+                  <li><a href="#"></a><img src="./images/nav2.png" alt=""></li>
+                  <li><a href="#"></a><img src="./images/nav3.png" alt=""></li>
+                  <li><a href="#"></a><img src="./images/nav4.png" alt=""></li>
+                  <li><a href="#"></a><img src="./images/nav5.png" alt=""></li>
+                  <li><a href="#"></a><img src="./images/nav6.png" alt=""></li>
+              </ul>
+            </div>
+
+            <!-- 产品模块 -->
+            <div class="lt_product">
+              <ul>
+                <li class="lt_product_item">
+                  <a href="#">
+                    <img src="./images/product.jpg" alt="">
+                    <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
+                    <p>
+                      <span class="price">¥560</span>
+                      <span class="oldPrice">¥560</span>
+                    </p>
+                    <button class="mui-btn mui-btn-primary">立即购买</button>
+                  </a>
+                </li>
+                <li class="lt_product_item">
+                  <a href="#">
+                    <img src="./images/product.jpg" alt="">
+                    <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
+                    <p>
+                      <span class="price">¥560</span>
+                      <span class="oldPrice">¥560</span>
+                    </p>
+                    <button class="mui-btn mui-btn-primary">立即购买</button>
+                  </a>
+                </li>
+                <li class="lt_product_item">
+                  <a href="#">
+                    <img src="./images/product.jpg" alt="">
+                    <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
+                    <p>
+                      <span class="price">¥560</span>
+                      <span class="oldPrice">¥560</span>
+                    </p>
+                    <button class="mui-btn mui-btn-primary">立即购买</button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- 底部 -->
 <div class="lt_footer">
@@ -62,5 +144,6 @@
   
   <script src="./lib/mui/js/mui.js"></script>
   <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./js/common.js"></script>
 </body>
 </html>
