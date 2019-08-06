@@ -108,3 +108,73 @@ img {
   /* 子元素是定位布局的, 父元素要加定位 */
   position: relative;
 }
+
+
+/* 公共搜索框样式 */
+.lt_search{
+  padding: 10px;
+}
+.lt_search .search_input{
+  height: 34px;
+  line-height: 34px;
+  font-size: 12px;
+  border: 1px solid #007AFF;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 55px;
+}
+.lt_search .search_btn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+/* 产品模块 */
+.lt_product{
+  padding: 10px;
+}
+.lt_product_item{
+  width: 48%;
+  float: left;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.lt_product_item:nth-child(odd){
+  margin-right: 4%;
+}
+.lt_product_item .price{
+  color: red;
+}
+.lt_product_item .oldPrice{
+  text-decoration: line-through;
+}
+.lt_product_item img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.lt_product_item .mui-ellipsis-2 {
+  height: 40px;
+}
+.lt_product .loading{
+  height: 40px;
+  width: 40px;
+  border: 3px solid #369;
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 150px;
+  animation: rotate 1s infinite ease-in-out;
+}
+@keyframes rotate{
+  from{
+    transform: translate(-50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%) rotate(360deg);
+  }
+}
