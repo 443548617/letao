@@ -84,7 +84,7 @@
           {{each arr v i}}
           <li>
             <a href="#" class="mui-pull-left">{{v}}</a>
-            <i class="mui-icon mui-icon-closeempty mui-pull-right"></i>
+            <i data-index="{{i}}" class="mui-icon mui-icon-closeempty mui-pull-right btn_del"></i>
           </li>
           {{/each}}
         </ul>
