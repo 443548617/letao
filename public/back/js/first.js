@@ -1,7 +1,3 @@
-/**
- * Created by Jepson on 2018/8/19.
- */
-
 $(function() {
 
   var currentPage = 1;

@@ -1,7 +1,3 @@
-/**
- * Created by Jepson on 2018/8/18.
- */
-
 $(function() {
   /*
    * 1. 进行表单校验配置

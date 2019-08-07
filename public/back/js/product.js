@@ -1,7 +1,3 @@
-/**
- * Created by Jepson on 2018/8/20.
- */
-
 $(function() {
   var currentPage = 1; // 当前页
   var pageSize = 2; // 每页条数

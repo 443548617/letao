@@ -1,7 +1,3 @@
-/**
- * Created by Jepson on 2018/8/18.
- */
-
 $(function() {
   // 柱状图
   // 基于准备好的dom，初始化echarts实例
