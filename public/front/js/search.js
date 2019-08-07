@@ -1,7 +1,3 @@
-/**
- * Created by Jepson on 2018/8/22.
- */
-
 $(function() {
   // 注意: 要进行本地存储localStorage的操作, 进行历史记录管理,
   //       需要约定一个键名,  search_list

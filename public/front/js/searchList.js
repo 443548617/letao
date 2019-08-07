@@ -1,7 +1,3 @@
-/**
- * Created by Jepson on 2018/8/22.
- */
-
 $(function() {
 
   // 功能1: 获取地址栏传递过来的搜索关键字, 设置给 input
